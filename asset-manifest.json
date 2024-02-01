@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/baloons/static/css/main.7acaea2f.css",
-    "main.js": "/baloons/static/js/main.07d3183d.js",
+    "main.css": "/baloons/static/css/main.cd2e038f.css",
+    "main.js": "/baloons/static/js/main.897b8f63.js",
     "index.html": "/baloons/index.html",
-    "main.7acaea2f.css.map": "/baloons/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/baloons/static/js/main.07d3183d.js.map"
+    "static/media/burger-menu.svg": "/baloons/static/media/burger-menu.3c943b65c25032a6716792ced8bd813c.svg",
+    "main.cd2e038f.css.map": "/baloons/static/css/main.cd2e038f.css.map",
+    "main.897b8f63.js.map": "/baloons/static/js/main.897b8f63.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.cd2e038f.css",
+    "static/js/main.897b8f63.js"
   ]
 }
