@@ -28,7 +28,7 @@ export const WrapperMenu = styled.div`
     align-items: center;
 ` 
 
-export const Menu = styled.p`
+export const MenuText = styled.p`
     text-transform: uppercase;
     cursor: pointer;
     font-size: 24px;

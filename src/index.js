@@ -6,12 +6,12 @@ import { GlobalStyle } from 'components/GlobalStyle';
 
 const theme = {
   colors: {
-    mainBgColor: '#fffff',
+    mainBgColor: '#ffffff',
     mainTexColor: '#222222',
     secondaryTextColor: '#565148',
     textareaColor: "#888",
     labelsColor: "#949494",
-    textWhiteColor: '#fffff',
+    textWhiteColor: '#ffffff',
     accentColor: '#ED4B5E',
     secondaryAccentColor: '#FFEFF0',
   },
