@@ -1,14 +1,19 @@
 import Header from 'components/Header/Header'
 import React from 'react'
-import { Container } from './Layout.styled'
+// import { Container } from './Layout.styled'
+import Main from 'components/Main/Main'
 
 const Layout = ({children}) => {
   return (
-      <Container>
-          <Header />
-          <main>{children}</main>
+    <div>
+           {/* <Container> */}
+      <header><Header /></header> 
+      <Main>{children}</Main>
+          {/* <main>{children}</main> */}
           <footer></footer>
-      </Container>
+     {/* </Container> */}
+    </div>
+
   )
 }
 

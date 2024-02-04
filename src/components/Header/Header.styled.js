@@ -1,13 +1,22 @@
 import styled from 'styled-components';
 import { ReactComponent as Burger } from '../../images/svg/burger-menu.svg';
 
-export const Head = styled.header`
-    height: 200px;
-    background: ${p => p.theme.colors.secondaryAccentColor};
+export const HeaderSection = styled.div`
+    /* position: absolute; */
+    top: 0;
+    left: 0;
     padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+@media screen and (min-width: 768px){
+    padding-top: 32px;
+}
+
+@media screen and (min-width: 1280px){
+    padding-top: 37px;
+}
 `
 
 export const BurgerMenu = styled(Burger)`

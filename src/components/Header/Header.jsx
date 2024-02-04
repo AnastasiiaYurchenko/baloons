@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { BurgerMenu, Head, WrapperMenu, MenuText } from './Header.styled';
+import { BurgerMenu, HeaderSection, WrapperMenu, MenuText } from './Header.styled';
 import Menu from 'components/Menu/Menu';
 import logo from '../../images/logo.png';
+import { Container } from 'components/Layout/Layout.styled';
 
 
 const Header = () => {
@@ -12,7 +13,9 @@ const [isMenuVisible, setMenuVisible] = useState(false);
   };
 
   return (
-    <Head>
+    <Container>
+    <HeaderSection>
+      
         <a href="/">
           <img src={logo} alt="Logo" width='104px' />
         </a>
@@ -20,9 +23,10 @@ const [isMenuVisible, setMenuVisible] = useState(false);
         <MenuText>menu</MenuText>
         <BurgerMenu/>  
       </WrapperMenu>
-      <Menu isVisible={isMenuVisible} onClose={toggleMenu} />
-      
-    </Head>
+        <Menu isVisible={isMenuVisible} onClose={toggleMenu} />
+    </HeaderSection>
+    </Container>
+
   )
 }
 
