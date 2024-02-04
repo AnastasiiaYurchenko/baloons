@@ -7,7 +7,7 @@ import { GlobalStyle } from 'components/GlobalStyle';
 const theme = {
   colors: {
     mainBgColor: '#ffffff',
-    mainTexColor: '#222222',
+    mainTextColor: '#222222',
     secondaryTextColor: '#565148',
     textareaColor: "#888",
     labelsColor: "#949494",

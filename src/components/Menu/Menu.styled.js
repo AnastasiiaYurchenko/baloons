@@ -10,6 +10,14 @@ export const MenuContainer = styled.div`
     z-index: 2;
     background: ${p => p.theme.colors.mainBgColor};
     padding: 30px 20px;
+
+    @media screen and (min-width: 768px){
+    padding: 32px 30px;
+}
+
+    @media screen and (min-width: 1280px){
+    padding: 37px 112px;
+}
 `
 
 export const WrapperTop = styled.div`
@@ -37,4 +45,30 @@ export const List = styled.ul`
     align-items: center;
     justify-content: center;
     gap: 24px;
+
+    @media screen and (min-width: 768px){
+        gap: 36px;
+}
+
+    @media screen and (min-width: 1280px){
+        gap: 48px;
+}
+`
+
+export const Link = styled.a`
+    font-family: 'AnzeigenGroT';
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: ${p => p.theme.colors.mainTextColor};
+
+    @media screen and (min-width: 768px){
+        font-size: 40px;
+}
+
+    @media screen and (min-width: 1280px){
+        font-size: 64px;
+}
 `

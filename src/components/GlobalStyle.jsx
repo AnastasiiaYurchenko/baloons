@@ -1,26 +1,22 @@
 import { createGlobalStyle } from "styled-components";
 import 'modern-normalize';
 
+import AnzeigenGroT from '../fonts/AnzeigenGroteskT.woff2';
+import InterMedium from '../fonts/Inter-Medium.woff2';
+
 export const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'InterMedium';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/Inter-Medium.ttf') format('truetype');
+  src: url(${InterMedium}) format('woff2');
 }
 
-    @font-face {
+@font-face {
   font-family: 'AnzeigenGroT';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/AnzeigenGroT.ttf') format('truetype');
-}
-
-   @font-face {
-  font-family: 'AnzeigenGro-T';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/AnzeigenGroteskTRegular.otf') format('opentype');
+  src: url(${AnzeigenGroT}) format('woff2');
 }
 
     body {

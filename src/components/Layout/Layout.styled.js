@@ -8,7 +8,7 @@ padding: 0 20px;
     padding: 0 30px;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1280px){
     padding: 0 112px;
 }
 `

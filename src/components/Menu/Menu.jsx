@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo.png'
-import { Button, CloseIcon, MenuContainer, WrapperTop, List } from './Menu.styled';
+import { Button, CloseIcon, MenuContainer, WrapperTop, List, Link } from './Menu.styled';
 
 const Menu = () => {
   return (
@@ -14,10 +14,10 @@ const Menu = () => {
           </Button>
           </WrapperTop>
           <List>
-            <li><a href="#hero">główna</a></li>
-            <li><a href="#about">O nas</a></li>
-            <li><a href="#reviews">Recenzje</a></li>
-            <li><a href="#contacts">Kontakty</a></li>
+            <li><Link href="#hero">główna</Link></li>
+            <li><Link href="#about">O nas</Link></li>
+            <li><Link href="#reviews">Recenzje</Link></li>
+            <li><Link href="#contacts">Kontakty</Link></li>
           </List>
         
           
