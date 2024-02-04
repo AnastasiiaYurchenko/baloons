@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/baloons/static/css/main.cd2e038f.css",
-    "main.js": "/baloons/static/js/main.46ff73d2.js",
+    "main.js": "/baloons/static/js/main.6ece3236.js",
+    "static/media/Inter-Medium.woff2": "/baloons/static/media/Inter-Medium.01f03178adde434fc9fa.woff2",
+    "static/media/AnzeigenGroteskT.woff2": "/baloons/static/media/AnzeigenGroteskT.7493fea6a77c0723357f.woff2",
     "index.html": "/baloons/index.html",
     "static/media/burger-menu.svg": "/baloons/static/media/burger-menu.3c943b65c25032a6716792ced8bd813c.svg",
     "static/media/close.svg": "/baloons/static/media/close.f1a26b8ad6f7fdf923f1b41e3ef23eed.svg",
     "main.cd2e038f.css.map": "/baloons/static/css/main.cd2e038f.css.map",
-    "main.46ff73d2.js.map": "/baloons/static/js/main.46ff73d2.js.map"
+    "main.6ece3236.js.map": "/baloons/static/js/main.6ece3236.js.map"
   },
   "entrypoints": [
     "static/css/main.cd2e038f.css",
-    "static/js/main.46ff73d2.js"
+    "static/js/main.6ece3236.js"
   ]
 }
