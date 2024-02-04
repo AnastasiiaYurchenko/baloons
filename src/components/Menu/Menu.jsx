@@ -2,14 +2,18 @@ import React from 'react';
 import logo from '../../images/logo.png'
 import { Button, CloseIcon, MenuContainer, WrapperTop, List, Link } from './Menu.styled';
 
-const Menu = () => {
+const Menu = ({ isVisible, onClose }) => {
+ const handleCloseButtonClick = () => {
+    onClose();
+  };
+
   return (
-      <MenuContainer>
+      <MenuContainer isVisible={isVisible}>
           <WrapperTop>
               <a href="/">
             <img src={logo} alt="Logo" width='104px' />
           </a>
-          <Button type='button'>
+          <Button type='button' onClick={handleCloseButtonClick}>
               <CloseIcon/>
           </Button>
           </WrapperTop>

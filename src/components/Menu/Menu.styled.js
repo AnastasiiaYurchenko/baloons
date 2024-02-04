@@ -4,12 +4,13 @@ import { ReactComponent as Close } from '../../images/svg/close.svg';
 export const MenuContainer = styled.div`
     position: fixed;
     top: 0;
-    left: 0;
+    left: ${({ isVisible }) => (isVisible ? '0' : '100%')};
     width: 100dvw;
     height: 100dvh;
     z-index: 2;
     background: ${p => p.theme.colors.mainBgColor};
     padding: 30px 20px;
+    transition: left 0.3s ease;
 
     @media screen and (min-width: 768px){
     padding: 32px 30px;

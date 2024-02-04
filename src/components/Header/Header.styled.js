@@ -14,11 +14,13 @@ export const BurgerMenu = styled(Burger)`
   width: 24px;
   height: 24px;
   cursor: pointer;
-  fill: ${p => p.theme.colors.mainTexColor};
+  fill: ${p => p.theme.colors.mainTextColor};
+  stroke: ${p => p.theme.colors.mainTextColor};;
   transition: all 250ms;
 
   &:hover {
     fill: ${p => p.theme.colors.accentColor};
+    stroke: ${p => p.theme.colors.accentColor};
   }
 `
 
@@ -29,11 +31,12 @@ export const WrapperMenu = styled.div`
 ` 
 
 export const MenuText = styled.p`
+    font-family: 'AnzeigenGroT';
     text-transform: uppercase;
     cursor: pointer;
     font-size: 24px;
-    font-weight: 400;
-    letter-spacing: -1;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     line-height: 0.9;
     color:  ${p => p.theme.colors.mainTexColor};
 
