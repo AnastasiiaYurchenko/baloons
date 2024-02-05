@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/Footer'
 import Header from 'components/Header/Header'
 import React from 'react'
 // import { Container } from './Layout.styled'
@@ -10,7 +11,7 @@ const Layout = ({children}) => {
            {/* <Container> */}
       <Header /> 
       <main>{children}</main>
-      <footer></footer>
+      <Footer/>
      {/* </Container> */}
      </div>
 
