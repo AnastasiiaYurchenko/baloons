@@ -1,12 +1,14 @@
 import About from 'components/About/About'
 import Hero from 'components/Hero/Hero'
-import React from 'react'
+import Reviews from 'components/Reviews/Reviews'
+import React from 'react';
 
 const Main = () => {
   return (
       <div>
           <Hero />
-          <About/>
+      <About />
+      <Reviews/>
     </div>
   )
 }
