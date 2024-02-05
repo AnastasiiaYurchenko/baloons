@@ -1,14 +1,14 @@
-import About from 'components/About/About'
-import Hero from 'components/Hero/Hero'
-import Reviews from 'components/Reviews/Reviews'
+// import About from 'components/About/About'
+// import Hero from 'components/Hero/Hero'
+// import Reviews from 'components/Reviews/Reviews'
 import React from 'react';
 
 const Main = () => {
   return (
       <div>
-          <Hero />
+      {/* <Hero />
       <About />
-      <Reviews/>
+      <Reviews/> */}
     </div>
   )
 }
