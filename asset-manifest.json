@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/baloons/static/css/main.506e44f9.css",
-    "main.js": "/baloons/static/js/main.23430639.js",
+    "main.js": "/baloons/static/js/main.431d3e57.js",
     "static/media/bg1-desk.png": "/baloons/static/media/bg1-desk.d02b56350f4a9e31a86a.png",
     "static/media/bg1-tablet.png": "/baloons/static/media/bg1-tablet.0c41287acf8f47993002.png",
     "static/media/bg2-desk.png": "/baloons/static/media/bg2-desk.5e392361ec206c6e9628.png",
@@ -15,16 +15,18 @@
     "static/media/slick.ttf": "/baloons/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/baloons/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/baloons/index.html",
+    "static/media/phone.svg": "/baloons/static/media/phone.993a112054d2013366100d94ecfc5a12.svg",
     "static/media/user-avatar.svg": "/baloons/static/media/user-avatar.9844192825b502dde1e6107ed2d6af38.svg",
     "static/media/burger-menu.svg": "/baloons/static/media/burger-menu.3c943b65c25032a6716792ced8bd813c.svg",
+    "static/media/envelope.svg": "/baloons/static/media/envelope.0f135b3f59639d1663f601c68de8f294.svg",
     "static/media/close.svg": "/baloons/static/media/close.f1a26b8ad6f7fdf923f1b41e3ef23eed.svg",
     "static/media/arrow-left.svg": "/baloons/static/media/arrow-left.7e3c9df8252cd56434238737d45bb70f.svg",
     "static/media/arrow-right.svg": "/baloons/static/media/arrow-right.59376ae6ba0cf7013e8ac2056afa9da0.svg",
     "main.506e44f9.css.map": "/baloons/static/css/main.506e44f9.css.map",
-    "main.23430639.js.map": "/baloons/static/js/main.23430639.js.map"
+    "main.431d3e57.js.map": "/baloons/static/js/main.431d3e57.js.map"
   },
   "entrypoints": [
     "static/css/main.506e44f9.css",
-    "static/js/main.23430639.js"
+    "static/js/main.431d3e57.js"
   ]
 }
