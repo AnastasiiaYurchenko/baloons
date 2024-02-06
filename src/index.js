@@ -9,8 +9,8 @@ const theme = {
     mainBgColor: '#ffffff',
     mainTextColor: '#222222',
     secondaryTextColor: '#565148',
-    textareaColor: "#888",
-    labelsColor: "#949494",
+    placeholderColor: '#888',
+    labelsColor: '#949494',
     textWhiteColor: '#ffffff',
     accentColor: '#ED4B5E',
     secondaryAccentColor: '#FFEFF0',
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
-      <GlobalStyle/>
+      <GlobalStyle />
     </ThemeProvider>
   </React.StrictMode>
 );
