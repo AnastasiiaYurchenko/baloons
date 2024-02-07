@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 
 import AnzeigenGroT from '../fonts/AnzeigenGroteskT.woff2';
@@ -60,4 +60,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-`
+`;

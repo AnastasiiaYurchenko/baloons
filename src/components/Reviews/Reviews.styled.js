@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import Slider from 'react-slick';
 import { ReactComponent as ArrowLeft } from '../../images/svg/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../images/svg/arrow-right.svg';
 
 export const ReviewsSection = styled.div`
   padding: 80px 0;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 184px;
+  }
 
   @media screen and (min-width: 1280px) {
     padding: 100px 0 0 0;
@@ -33,14 +38,36 @@ export const Title = styled.h2`
   }
 `;
 
-export const Arrows = styled.div`
-  display: none;
-  @media screen and (min-width: 768px) and (max-width: 1279.5px) {
+export const SliderStyled = styled(Slider)`
+  .slick-track {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    margin: 48px auto 0;
+    gap: 16px;
+  }
+  display: flex;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    .slick-arrow::before {
+      display: none;
+    }
+    .slick-prev,
+    .slick-next {
+      top: 135%;
+    }
+    .slick-prev {
+      left: 40%;
+    }
+    .slick-next {
+      right: 40%;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .slick-track {
+      display: flex;
+      gap: 26px;
+    }
+    display: flex;
+    gap: 26px;
   }
 `;
 
