@@ -19,7 +19,7 @@ import baloonsRight from '../../images/baloons-right.png';
 
 const Contacts = () => {
   return (
-    <ContactsSection>
+    <ContactsSection id="contacts">
       <LeftWrapper>
         <Title>Kontakty</Title>
         <Text>
@@ -30,11 +30,13 @@ const Contacts = () => {
         <ContactsWrapper>
           <Contact>
             <IconPhone />
-            <ContactText>+48 793 351 407</ContactText>
+            <ContactText href="tel:+48793351407">+48 793 351 407</ContactText>
           </Contact>
           <Contact>
             <IconEnvelope />
-            <ContactText>confettibalony@gmail.com</ContactText>
+            <ContactText href="mailto:confettibalony@gmail.com">
+              confettibalony@gmail.com
+            </ContactText>
           </Contact>
         </ContactsWrapper>
       </LeftWrapper>

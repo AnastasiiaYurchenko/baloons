@@ -4,7 +4,6 @@ import { ReactComponent as Phone } from '../../images/svg/phone.svg';
 import { ReactComponent as Envelope } from '../../images/svg/envelope.svg';
 
 export const ContactsSection = styled.section`
-  display: block;
   @media screen and (min-width: 1280px) {
     display: flex;
     align-items: center;
@@ -112,7 +111,7 @@ export const IconEnvelope = styled(Envelope)`
   stroke: currentColor;
 `;
 
-export const ContactText = styled.p`
+export const ContactText = styled.a`
   font-family: 'InterMedium';
   font-weight: 500;
   font-size: 20px;

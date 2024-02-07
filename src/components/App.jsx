@@ -1,4 +1,3 @@
-// import Header from "./Header/Header";
 import Layout from './Layout/Layout';
 import reviews from '../reviewsData.json';
 import Hero from './Hero/Hero';

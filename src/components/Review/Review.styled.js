@@ -18,7 +18,6 @@ export const ReviewItem = styled.div`
   @media screen and (min-width: 1280px) {
     padding: 36px 24px;
     height: 277px;
-    /* width: calc((100% - 52px) / 3); */
   }
 `;
 
