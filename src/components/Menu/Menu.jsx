@@ -26,16 +26,24 @@ const Menu = ({ isVisible, onClose }) => {
       </WrapperTop>
       <List>
         <li>
-          <Link href="#hero">główna</Link>
+          <Link href="#hero" onClick={handleCloseButtonClick}>
+            główna
+          </Link>
         </li>
         <li>
-          <Link href="#about">O nas</Link>
+          <Link href="#about" onClick={handleCloseButtonClick}>
+            O nas
+          </Link>
         </li>
         <li>
-          <Link href="#reviews">Recenzje</Link>
+          <Link href="#reviews" onClick={handleCloseButtonClick}>
+            Recenzje
+          </Link>
         </li>
         <li>
-          <Link href="#contacts">Kontakty</Link>
+          <Link href="#contacts" onClick={handleCloseButtonClick}>
+            Kontakty
+          </Link>
         </li>
       </List>
     </MenuContainer>
