@@ -1,13 +1,15 @@
-import React from 'react'
-import {HeroContainer, Title } from './Hero.styled'
+import React from 'react';
+import { HeroSection, Title } from './Hero.styled';
 
 const Hero = () => {
   return (
-    <HeroContainer>
-          <Title>Tworzymy unikalne <br/> i niepowtarzalne <span>dekoracje balonowe</span> na imprezy
-          </Title>
-    </HeroContainer>
-  )
-}
+    <HeroSection id="hero">
+      <Title>
+        Tworzymy unikalne <br /> i niepowtarzalne{' '}
+        <span>dekoracje balonowe</span> na imprezy
+      </Title>
+    </HeroSection>
+  );
+};
 
-export default Hero
+export default Hero;

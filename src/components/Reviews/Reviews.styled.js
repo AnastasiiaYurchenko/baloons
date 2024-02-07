@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import { ReactComponent as ArrowLeft } from '../../images/svg/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../images/svg/arrow-right.svg';
 
-export const ReviewsSection = styled.div`
+export const ReviewsSection = styled.section`
   padding: 80px 0;
 
   @media screen and (min-width: 768px) {

@@ -63,7 +63,7 @@ const Reviews = ({ reviews }) => {
     ],
   };
   return (
-    <ReviewsSection>
+    <ReviewsSection id="reviews">
       <Container>
         <Title>Recenzje</Title>
 
