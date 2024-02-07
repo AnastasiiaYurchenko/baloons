@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Content>
-          <a href="/">
+          <a href="/baloons">
             <img src={logo} alt="Logo" width="104px" />
           </a>
           <Text>confetti &copy; 2023</Text>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'components/GlobalStyle';
+import { BrowserRouter } from 'react-router-dom';
 
 const theme = {
   colors: {
@@ -20,7 +21,9 @@ const theme = {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <BrowserRouter basename="/baloons">
+        <App />
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   </React.StrictMode>
