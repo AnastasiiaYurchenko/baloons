@@ -1,6 +1,7 @@
 import React from 'react';
 import { Content, Text } from './Footer.styled';
 import { Container } from 'components/Layout/Layout.styled';
+
 import logo from '../../images/logo.png';
 
 const Footer = () => {

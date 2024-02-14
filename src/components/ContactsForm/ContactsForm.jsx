@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik } from 'formik';
+import { object, string } from 'yup';
 import {
   FormStyled,
   Input,
@@ -8,8 +9,6 @@ import {
   Error,
   Button,
 } from './ContactsForm.styled';
-// import * as Yup from 'yup';
-import { object, string } from 'yup';
 
 let schema = object({
   name: string().min(2).max(20).required(),

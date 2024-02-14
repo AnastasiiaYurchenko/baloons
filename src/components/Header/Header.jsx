@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Menu from 'components/Menu/Menu';
 import {
   BurgerMenu,
   HeaderSection,
@@ -6,9 +7,9 @@ import {
   WrapperMenu,
   MenuText,
 } from './Header.styled';
-import Menu from 'components/Menu/Menu';
-import logo from '../../images/logo.png';
 import { Container } from 'components/Layout/Layout.styled';
+
+import logo from '../../images/logo.png';
 
 const Header = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);

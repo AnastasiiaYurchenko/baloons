@@ -1,4 +1,5 @@
 import React from 'react';
+import Review from 'components/Review/Review';
 import {
   Circle,
   ReviewsSection,
@@ -8,7 +9,6 @@ import {
   ArrowNext,
 } from './Reviews.styled';
 import { Container } from 'components/Layout/Layout.styled';
-import Review from 'components/Review/Review';
 
 const Reviews = ({ reviews }) => {
   function NextArrow(props) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactsForm from 'components/ContactsForm/ContactsForm';
 import {
   ContactsSection,
   LeftWrapper,
@@ -13,7 +14,7 @@ import {
   BaloonsLeft,
   BaloonsRight,
 } from './Contacts.styled';
-import ContactsForm from 'components/ContactsForm/ContactsForm';
+
 import baloonsLeft from '../../images/baloons-left.png';
 import baloonsRight from '../../images/baloons-right.png';
 
