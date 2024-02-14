@@ -1,9 +1,10 @@
 import Layout from './Layout/Layout';
+import Hero from '../sections/Hero/Hero';
+import About from '../sections/About/About';
+import Reviews from '../sections/Reviews/Reviews';
+import Contacts from '../sections/Contacts/Contacts';
+
 import reviews from '../reviewsData.json';
-import Hero from './Hero/Hero';
-import About from './About/About';
-import Reviews from './Reviews/Reviews';
-import Contacts from './Contacts/Contacts';
 
 export const App = () => {
   return (

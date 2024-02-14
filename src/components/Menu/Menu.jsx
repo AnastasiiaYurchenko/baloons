@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../images/logo.png';
 import {
   Button,
   CloseIcon,
@@ -8,6 +7,8 @@ import {
   List,
   Link,
 } from './Menu.styled';
+
+import logo from '../../images/logo.png';
 
 const Menu = ({ isVisible, onClose }) => {
   const handleCloseButtonClick = () => {
