@@ -13,11 +13,6 @@ import logo from '../../images/logo.png';
 
 const Header = () => {
   const { isOpen, open, close } = useToggle();
-  // const [isMenuVisible, setMenuVisible] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setMenuVisible(!isMenuVisible);
-  // };
 
   return (
     <HeaderSection>
@@ -26,7 +21,6 @@ const Header = () => {
           <a href="/baloons">
             <img src={logo} alt="Logo" width="104px" />
           </a>
-          {/* <WrapperMenu onClick={toggleMenu}> */}
           <WrapperMenu onClick={open}>
             menu
             <BurgerMenu />

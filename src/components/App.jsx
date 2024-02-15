@@ -5,12 +5,13 @@ import Reviews from '../sections/Reviews/Reviews';
 import Contacts from '../sections/Contacts/Contacts';
 
 import reviews from '../reviewsData.json';
+import about from '../aboutData.json';
 
 export const App = () => {
   return (
     <Layout>
       <Hero />
-      <About />
+      <About about={about} />
       <Reviews reviews={reviews} />
       <Contacts />
     </Layout>

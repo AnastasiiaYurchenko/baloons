@@ -1,10 +1,18 @@
 import React from 'react';
-import { List, Item, ItemTitle, ItemText } from './AboutGrid.styled';
+import { List } from './AboutGrid.styled';
+import AboutItem from 'components/AboutItem/AboutItem';
 
-const AboutGrid = () => {
+const AboutGrid = ({ about }) => {
   return (
     <List>
-      <Item>
+      {about.map(aboutItem => {
+        return (
+          <div key={aboutItem.id}>
+            <AboutItem aboutItem={aboutItem} />
+          </div>
+        );
+      })}
+      {/* <Item>
         <ItemTitle>Kreatywne podejście i dbałość o szczegóły</ItemTitle>
         <ItemText>
           Specjaliści zapewniają doradztwo i kreatywność przy wyborze dekoracji
@@ -31,7 +39,7 @@ const AboutGrid = () => {
           Firma gwarantuje nie tylko wysokiej jakości dostawę zamówień, ale
           także ich montaż, zapewniając klientom kompleksową obsługę.
         </ItemText>
-      </Item>
+      </Item> */}
     </List>
   );
 };

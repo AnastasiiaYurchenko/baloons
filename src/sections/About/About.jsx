@@ -4,7 +4,7 @@ import AboutSlider from 'components/AboutSlider/AboutSlider';
 import { Container } from 'components/Layout/Layout.styled';
 import { Subtitle, Text } from './About.styled';
 
-const About = () => {
+const About = ({ about }) => {
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const About = () => {
           Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
           dekoracji na imprezy i wydarzenia
         </Text>
-        {isWideScreen ? <AboutGrid /> : <AboutSlider />}
+        {isWideScreen ? <AboutGrid about={about} /> : <AboutSlider />}
       </Container>
     </section>
   );
