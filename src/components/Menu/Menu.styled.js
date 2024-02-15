@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as ScrollLink } from 'react-scroll';
 import { ReactComponent as Close } from '../../images/svg/close.svg';
 
 export const MenuContainer = styled.div`
@@ -32,6 +33,11 @@ export const Button = styled.button`
   border: none;
   background: transparent;
   cursor: pointer;
+  transition: all 250ms;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const CloseIcon = styled(Close)`
@@ -55,14 +61,20 @@ export const List = styled.ul`
   }
 `;
 
-export const Link = styled.a`
+export const Link = styled(ScrollLink)`
   font-family: 'AnzeigenGroT';
   font-weight: 500;
   font-size: 24px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
+  transition: all 250ms;
   color: ${p => p.theme.colors.mainTextColor};
+
+  &:hover {
+    color: ${p => p.theme.colors.accentColor};
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 40px;
