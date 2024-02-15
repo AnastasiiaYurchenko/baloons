@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export const Subtitle = styled.div`
+export const Subtitle = styled.h2`
   font-family: 'AnzeigenGroT';
   font-weight: 500;
   font-size: 36px;
