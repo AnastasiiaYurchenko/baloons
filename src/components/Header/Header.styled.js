@@ -33,23 +33,17 @@ export const BurgerMenu = styled(Burger)`
   width: 24px;
   height: 24px;
   cursor: pointer;
-  fill: ${p => p.theme.colors.mainTextColor};
-  stroke: ${p => p.theme.colors.mainTextColor};
-  transition: all 250ms;
-
-  &:hover {
-    fill: ${p => p.theme.colors.accentColor};
-    stroke: ${p => p.theme.colors.accentColor};
-  }
+  fill: currentColor;
+  stroke: currentColor;
 `;
 
-export const WrapperMenu = styled.div`
+export const WrapperMenu = styled.button`
   display: flex;
   gap: 8px;
   align-items: center;
-`;
-
-export const MenuText = styled.p`
+  border: none;
+  outline: none;
+  background: transparent;
   font-family: 'AnzeigenGroT';
   text-transform: uppercase;
   cursor: pointer;
@@ -58,8 +52,25 @@ export const MenuText = styled.p`
   letter-spacing: -0.01em;
   line-height: 0.9;
   color: ${p => p.theme.colors.mainTexColor};
+  transition: all 250ms;
 
   &:hover {
     color: ${p => p.theme.colors.accentColor};
   }
 `;
+
+// export const MenuText = styled.p`
+//   font-family: 'AnzeigenGroT';
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   font-size: 24px;
+//   font-weight: 500;
+//   letter-spacing: -0.01em;
+//   line-height: 0.9;
+//   color: ${p => p.theme.colors.mainTexColor};
+//   transition: all 250ms;
+
+//   &:hover {
+//     color: ${p => p.theme.colors.accentColor};
+//   }
+// `;

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import {
   Button,
   CloseIcon,
@@ -10,13 +11,26 @@ import {
 
 import logo from '../../images/logo.png';
 
-const Menu = ({ isVisible, onClose }) => {
+const Menu = ({ isOpen, onClose }) => {
   const handleCloseButtonClick = () => {
     onClose();
   };
 
+  const handleKeyPress = event => {
+    if (event.key === 'Escape') {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  });
   return (
-    <MenuContainer isVisible={isVisible}>
+    <MenuContainer isOpen={isOpen}>
       <WrapperTop>
         <a href="/baloons">
           <img src={logo} alt="Logo" width="104px" />

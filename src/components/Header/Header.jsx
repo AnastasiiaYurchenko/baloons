@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useToggle } from 'hooks/useToggle';
 import Menu from 'components/Menu/Menu';
 import {
   BurgerMenu,
   HeaderSection,
   FlexContainer,
   WrapperMenu,
-  MenuText,
 } from './Header.styled';
 import { Container } from 'components/Layout/Layout.styled';
 
 import logo from '../../images/logo.png';
 
 const Header = () => {
-  const [isMenuVisible, setMenuVisible] = useState(false);
+  const { isOpen, open, close } = useToggle();
+  // const [isMenuVisible, setMenuVisible] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuVisible(!isMenuVisible);
-  };
+  // const toggleMenu = () => {
+  //   setMenuVisible(!isMenuVisible);
+  // };
 
   return (
     <HeaderSection>
@@ -25,13 +26,14 @@ const Header = () => {
           <a href="/baloons">
             <img src={logo} alt="Logo" width="104px" />
           </a>
-          <WrapperMenu onClick={toggleMenu}>
-            <MenuText>menu</MenuText>
+          {/* <WrapperMenu onClick={toggleMenu}> */}
+          <WrapperMenu onClick={open}>
+            menu
             <BurgerMenu />
           </WrapperMenu>
         </FlexContainer>
       </Container>
-      <Menu isVisible={isMenuVisible} onClose={toggleMenu} />
+      <Menu isOpen={isOpen} onClose={close} />
     </HeaderSection>
   );
 };
