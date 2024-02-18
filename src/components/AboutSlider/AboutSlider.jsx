@@ -1,4 +1,5 @@
 import React from 'react';
+// import AboutItem from 'components/AboutItem/AboutItem';
 import { SliderStyled, Item, ItemTitle, ItemText } from './AboutSlider.styled';
 
 const AboutSlider = () => {
@@ -12,6 +13,15 @@ const AboutSlider = () => {
   };
   return (
     <SliderStyled {...settings}>
+      {/* {about.map(aboutItem => {
+        return (
+          <AboutItem
+            id={aboutItem.id}
+            key={aboutItem.id}
+            aboutItem={aboutItem}
+          />
+        );
+      })} */}
       <Item id="1">
         <ItemTitle>Kreatywne podejście i dbałość o szczegóły</ItemTitle>
         <ItemText>

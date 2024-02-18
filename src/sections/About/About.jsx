@@ -27,7 +27,13 @@ const About = ({ about }) => {
           Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
           dekoracji na imprezy i wydarzenia
         </Text>
-        {isWideScreen ? <AboutGrid about={about} /> : <AboutSlider />}
+        {isWideScreen ? (
+          <AboutGrid about={about} />
+        ) : (
+          <AboutSlider
+          // about={about}
+          />
+        )}
       </Container>
     </section>
   );

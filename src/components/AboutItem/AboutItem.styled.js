@@ -1,8 +1,28 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Item = styled.li`
   border-radius: 24px;
   padding: 24px;
+  ${props =>
+    props.id === '1' &&
+    css`
+      background-color: ${p => p.theme.colors.accentColor};
+    `}
+  ${props =>
+    props.id === '2' &&
+    css`
+      background-color: ${p => p.theme.colors.mainTextColor};
+    `} 
+      ${props =>
+    props.id === '3' &&
+    css`
+      background-color: #444;
+    `}
+  ${props =>
+    props.id === '4' &&
+    css`
+      background-color: #808080;
+    `}
 
   &:nth-child(1) {
     background: ${p => p.theme.colors.accentColor};
