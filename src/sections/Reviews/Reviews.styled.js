@@ -43,6 +43,7 @@ export const SliderStyled = styled(Slider)`
     display: flex;
     gap: 16px;
   }
+  justify-content: center;
   display: flex;
   gap: 16px;
 
@@ -63,9 +64,11 @@ export const SliderStyled = styled(Slider)`
   }
   @media screen and (min-width: 1280px) {
     .slick-track {
+      justify-content: center;
       display: flex;
       gap: 26px;
     }
+    justify-content: center;
     display: flex;
     gap: 26px;
   }
