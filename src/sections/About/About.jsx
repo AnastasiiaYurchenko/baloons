@@ -5,11 +5,11 @@ import { Container } from 'components/Layout/Layout.styled';
 import { Subtitle, Text } from './About.styled';
 
 const About = ({ about }) => {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 768);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsWideScreen(window.innerWidth > 768);
+      setIsWideScreen(window.innerWidth >= 768);
     };
 
     window.addEventListener('resize', handleResize);

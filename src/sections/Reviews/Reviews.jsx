@@ -53,7 +53,7 @@ const Reviews = ({ reviews }) => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           dots: true,
           slidesToShow: 1,
